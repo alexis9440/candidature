@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice8</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>		
+		<fieldset>
+			<legend>Candidature</legend>
+			<form action="recapitulation.php" method="GET" name="authentification" >
+				
+				<label> Civilité:</label>
+			<select name="civilité" >
+				<option selected />Monsieur</option>
+				<option  		 />Madame</option>
+			</select>
+			
+			</br>
+				</br>	
+				
+				<label>Nom:</label>
+			<input required type="text" name="Nom"
+				placeholder="Saisir votre Nom:"/>
+			
+			</br>
+				</br>
+			
+			    <label>Prénom:</label>
+			<input required type="text" name="Prénom"
+				placeholder="Saisir votre Prénom:"/>
+			
+			</br>
+				</br>
+			
+			    <label>Date de Naissance:</label>
+	        <input required type="Date" name="Date"
+				placeholder="Saisir votre Date Naissance:"/>
+			
+			</br>
+				</br>
+				
+			    <label>Numéro de téléphone:</label>
+			<input required type="tel" name="NumTel"
+				placeholder="0X-XX-XX-XX-XX"/>
+			
+			</br>
+				</br>
+				
+			    <label>Adresse électronique:</label>
+			<input required type="email" name="email"
+				placeholder="aaaa@bbbb.ccc"/>
+			
+			</br>
+				</br>
+				
+				<label>Niveau PHP:</label>
+		    
+		    </br>
+				</br>
+			
+			<input type="radio" name="Niveau" value="Débutant" checked/>Débutant
+			   
+		    <input type="radio" name="Niveau" value="Moyen" />Moyen
+			
+		    <input type="radio" name="Niveau" value="Bon"/>Bon
+		
+	    	<input type="radio" name="Niveau" value="Excellent"/>Excellent
+			
+		    </br>
+			    </br>
+			    
+			    <label>Frameworks PHP:</label>
+			    
+			</br>
+				</br>
+			
+			<input type="checkbox" name="Frameworks[]" value="Symfony"checked/>Symfony
+			   
+		    <input type="checkbox" name="Frameworks[]" value="CodeIgniter"/>CodeIgniter
+			
+		    <input type="checkbox" name="Frameworks[]" value="FuelPHP"/>FuelPHP
+		
+	    	<input type="checkbox" name="Frameworks[]" value="CakePHP"/>CakePHP
+	    	
+	    	<input type="checkbox" name="Frameworks[]" value="Lavarel"/>Lavarel
+			
+		    </br>
+			    </br>
+			
+				<label>De Plus:</label>
+				</br>
+		
+				<textarea name="le-message" rows="6" cols="50"				
+				placeholder="Vous pouvez saisir ici un message."/></textarea>
+			
+			</br>
+			    </br>
+			   		    
+			
+				<input type="submit" value="Valider" />
+				
+				<input type="reset" value="Annuler" />
+				
+			</form>
+		</fieldset>		
+	</body>	
+</html>
+
